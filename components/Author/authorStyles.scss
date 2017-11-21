@@ -1,0 +1,19 @@
+.authorContainerStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.authorCorner {
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid gray;
+  border-left: 30px solid transparent;
+}
+
+.authorMain {
+  width: 70px;
+  height: 30px;
+  background: gray;
+  color: white;
+}

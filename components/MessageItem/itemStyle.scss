@@ -1,0 +1,14 @@
+.messageItemStyle {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #8dd2d9, #58c0c7);
+}
+
+.messageContentStyle {
+  font-weight: bold;
+  font-style: italic;
+  padding: 15px;
+}
+.panel-body {
+  padding: 0;
+}
