@@ -14,6 +14,7 @@ export default class MessageBoard extends Component {
     };
     this.renderTabs = this.renderTabs.bind(this);
     this.createComments = this.createComments.bind(this);
+    this.addComment = this.addComment.bind(this);
   }
 
   componentDidMount() {
@@ -35,12 +36,27 @@ export default class MessageBoard extends Component {
   }
 
   renderTabs(comments, meldeElem) {
+    console.log("render tabs: " + comments);
     return <Tabs topics={this.state.topics} comments={comments} meldeElem={meldeElem} />;
   }
 
+  addComment(t) {
+    console.log("add comment: " + t);
+    let { comments } = this.state;
+    let newComment = {
+      id: ++comments.length,
+      content: t,
+      author: "richi"
+    };
+    comments.push(newComment);
+    this.setState({
+      comments
+    });
+  }
+
   render() {
-    let comments = this.createComments();
-    let meldeElem = <Meldeelement />;
+    let { comments } = this.state;
+    let meldeElem = <Meldeelement addComment={this.addComment} />;
     return this.renderTabs(comments, meldeElem);
   }
 }

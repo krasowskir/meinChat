@@ -1,4 +1,5 @@
 import React from "react";
+import MessageItem from "../MessageItem/MessageItem";
 import { Tabs, Tab } from "react-bootstrap";
 
 export default props => (
@@ -8,7 +9,7 @@ export default props => (
       return (
         <Tab eventKey={i} title={thema}>
           <h2 className="messageTabStyle">"{v.title}"</h2>
-          <div>{props.comments}</div>
+          {props.comments.map((v, i) => <MessageItem message={v.content} author={v.author} />)}
           <div>{props.meldeElem}</div>
         </Tab>
       );
