@@ -20,9 +20,7 @@ export default class MessageItem extends Component {
     return (
       <Panel className="messageItemStyle">
         <Likes />
-        <p className="messageContentStyle" messageContentStyle>
-          {this.state.message}
-        </p>
+        <p className="messageContentStyle">{this.state.message}</p>
         <Author author={this.state.author} />
       </Panel>
     );

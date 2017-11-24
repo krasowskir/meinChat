@@ -8,7 +8,6 @@ export default class Meldeelement extends Component {
       comment: ""
     };
     this.onCommentChange = this.onCommentChange.bind(this);
-    this.getComment = this.getComment.bind(this);
   }
 
   onCommentChange(e) {
@@ -26,8 +25,8 @@ export default class Meldeelement extends Component {
     return (
       <div className="meldeelementStyle">
         <FormControl type="text" onChange={this.onCommentChange} placeholder="Sag etwas..." />
-        <Button bsStyle="info" onClick={this.props.addComment.bind(null, this.state.comment)} bsSize="medium">
-          Schick ab!
+        <Button bsStyle="info" onClick={this.props.addComment.bind(null, this.state.comment)}>
+          Schick ab!{this.props.meineProp}
         </Button>
       </div>
     );

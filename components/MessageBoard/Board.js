@@ -41,7 +41,7 @@ export default class MessageBoard extends Component {
   }
 
   addComment(t) {
-    console.log("add comment: " + t);
+    console.log("add comment: " + t, "meine prop", `"${this.props.meineProp}"`);
     let { comments } = this.state;
     let newComment = {
       id: ++comments.length,
@@ -56,7 +56,7 @@ export default class MessageBoard extends Component {
 
   render() {
     let { comments } = this.state;
-    let meldeElem = <Meldeelement addComment={this.addComment} />;
+    let meldeElem = <Meldeelement addComment={this.addComment} meineProp="hallo" />;
     return this.renderTabs(comments, meldeElem);
   }
 }

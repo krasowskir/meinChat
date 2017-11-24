@@ -7,9 +7,9 @@ export default props => (
     {props.topics.map((v, i) => {
       let thema = "Thema " + i;
       return (
-        <Tab eventKey={i} title={thema}>
+        <Tab eventKey={i} title={thema} key={++i}>
           <h2 className="messageTabStyle">"{v.title}"</h2>
-          {props.comments.map((v, i) => <MessageItem message={v.content} author={v.author} />)}
+          {props.comments.map((v, i) => <MessageItem message={v.content} key={++i} author={v.author} />)}
           <div>{props.meldeElem}</div>
         </Tab>
       );
