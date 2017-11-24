@@ -30,6 +30,11 @@ export default class MessageBoard extends Component {
     });
   }
 
+  componentDidUpdate() {
+    window.scrollBy(0, 150);
+    // window.scrollTo(0, window.scrollY); geht nicht!
+  }
+
   createComments() {
     const commentItems = this.state.comments.map(elem => <MessageItem message={elem.content} author={elem.author} />);
     return commentItems;
