@@ -26,6 +26,7 @@ export default class Meldeelement extends Component {
   }
   clearContent() {
     this.input.value = "";
+    console.log(this.state.comment);
     this.props.addComment(this.state.comment);
   }
 
