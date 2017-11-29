@@ -39,6 +39,7 @@ export default class MyTabs extends Component {
 
   componentDidUpdate() {
     console.log("active: " + this.state.active);
+    window.scrollBy(0, 150);
   }
 
   addComment(t) {
