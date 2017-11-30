@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./messageStyles.scss";
-import MessageItem from "../MessageItem/MessageItem";
 import api from "../api";
 import Tabs from "../Tabs/Tabs";
 import Meldeelement from "../Meldeelement/Meldeelement";
