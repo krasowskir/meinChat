@@ -14,12 +14,29 @@ export default class MessageItem extends Component {
       likes: 0,
       dislikes: 0
     };
+    this.upLikes = this.upLikes.bind(this);
+    this.upHates = this.upHates.bind(this);
+  }
+
+  upLikes() {
+    let { likes } = this.state;
+    likes++;
+    this.setState({
+      likes: likes
+    });
+  }
+  upHates() {
+    let { dislikes } = this.state;
+    dislikes++;
+    this.setState({
+      dislikes: dislikes
+    });
   }
 
   render() {
     return (
       <Panel className="messageItemStyle">
-        <Likes />
+        <Likes likes={this.state.likes} hates={this.state.dislikes} upLikes={this.upLikes} upHates={this.upHates} />
         <p className="messageContentStyle">{this.state.message}</p>
         <Author author={this.state.author} />
       </Panel>

@@ -1,0 +1,21 @@
+.datumContainerStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.datumCorner {
+  width: 0;
+  height: 0;
+  border-top: 30px solid gray;
+  border-right: 30px solid transparent;
+}
+
+.datumMain {
+  width: 120px;
+  height: 30px;
+  background: gray;
+  color: white;
+  margin-top: 0;
+  padding: 5px;
+}

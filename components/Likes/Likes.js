@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Badge } from "react-bootstrap";
+import Datum from "../Datum/Datum";
+import ButtonLikeGroup from "../ButtonLikeGroup/ButtonLikeGroup";
 import "./likesStyle.scss";
 
-export default () => {
+export default props => {
   return (
     <div className="likesbuttongroupstyle">
-      <Button bsStyle="danger" bsSize="xs">
-        -
-      </Button>
-      <Button bsStyle="success" bsSize="xs">
-        +
-      </Button>
+      <Datum datum={new Date().toLocaleTimeString()} />
+      <ButtonLikeGroup upLikes={props.upLikes} upHates={props.upHates} hates={props.hates} likes={props.likes} />
     </div>
   );
 };
