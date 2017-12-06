@@ -1,0 +1,28 @@
+.headerStyle {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.headline-background {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 20px 15px;
+}
+
+.menuItemStyle {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  margin: 20px 15px;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+div.menuItemStyle:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.glyphStyle {
+  font-size: 20px;
+}
