@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./messageStyles.scss";
 import api from "../api";
-import Tabs from "../Tabs/Tabs";
-import Meldeelement from "../Meldeelement/Meldeelement";
+import { Tabs, Meldeelement } from "../index";
 
 export default class MessageBoard extends Component {
   constructor(props) {

@@ -1,10 +1,7 @@
 import React, { Component } from "react";
-import MessageItem from "../MessageItem/MessageItem";
 import { Tabs, Tab } from "react-bootstrap";
 import api from "../api";
-import TopicContext from "../TopicModel/TopicContext";
-import Meldeelement from "../Meldeelement/Meldeelement";
-import Header from "../HeaderBar/Header";
+import { MessageItem, TopicContext, Meldeelement, Header } from "../index";
 
 export default class MyTabs extends Component {
   constructor(props) {
