@@ -19,9 +19,6 @@ export default class Meldeelement extends Component {
     });
   }
 
-  getComment() {
-    return this.state.comment;
-  }
   submitCall(e) {
     e.key === "Enter" ? this.clearContent() : "";
   }

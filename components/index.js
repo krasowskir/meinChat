@@ -9,5 +9,6 @@ import LikeContent from "./MessageItem/LikeContent/LikeContent";
 import MessageItem from "./MessageItem/MessageItem";
 import Tabs from "./Tabs/Tabs";
 import TopicContext from "./TopicModel/TopicContext";
+import Headline from "./MessageItem/Head/Headline";
 
-export { Header, Meldeelement, MessageBoard, Author, ButtonLikeGroup, Datum, Head, LikeContent, MessageItem, Tabs, TopicContext };
+export { Header, Meldeelement, MessageBoard, Author, ButtonLikeGroup, Datum, Head, LikeContent, MessageItem, Tabs, TopicContext, Headline };

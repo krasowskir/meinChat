@@ -16,7 +16,7 @@ export default props => {
   }
   return (
     <div className={containerStyle} onClick={onClick}>
-      <Button bsStyle={buttonColor} bsSize="xs" className="buttonStyle" onClick={onClick}>
+      <Button bsStyle={buttonColor} bsSize="xs" className="buttonStyle">
         {props.sign}
       </Button>
       <div className="badgeStyle">{badgeVal}</div>
